@@ -48,7 +48,6 @@
 <td>
   <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css" alt="Tailwind"/>
   <img src="https://img.shields.io/badge/shadcn/ui-000000?logo=shadcnui" alt="shadcn/ui"/>
-  <img src="https://img.shadcn.com/badge/Radix_UI-161618?logo=radixui" alt="Radix UI"/>
 </td>
 </tr>
 <tr>
