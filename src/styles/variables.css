@@ -1,0 +1,230 @@
+:root {
+  /* Colors - Premium Medical Theme */
+  --color-primary: #4f46e5;
+  /* Indigo 600 - Trust & Professionalism */
+  --color-primary-dark: #3730a3;
+  /* Indigo 800 */
+  --color-primary-light: #eef2ff;
+  /* Indigo 50 */
+  --color-primary-glow: rgba(79, 70, 229, 0.4);
+  /* Glow effect */
+
+  --color-secondary: #0ea5e9;
+  /* Sky 500 - Health & Technology */
+  --color-secondary-dark: #0284c7;
+  /* Sky 600 */
+  --color-secondary-light: #f0f9ff;
+  /* Sky 50 */
+
+  --color-accent: #8b5cf6;
+  /* Violet - Eye-catching accent */
+
+  --color-success: #10b981;
+  /* Emerald 500 */
+  --color-warning: #f59e0b;
+  /* Amber 500 */
+  --color-danger: #ef4444;
+  /* Red 500 */
+  --color-info: #3b82f6;
+  /* Blue 500 */
+
+  /* Neutral Scale - Clean & Modern */
+  --color-background: #f8fafc;
+  /* Slate 50 */
+  --color-surface: #ffffff;
+  --color-surface-hover: #f1f5f9;
+  /* Slate 100 */
+
+  /* Text Colors */
+  --color-text-primary: #0f172a;
+  /* Slate 900 - Sharp Contrast */
+  --color-text-secondary: #475569;
+  /* Slate 600 - Soft Contrast */
+  --color-text-tertiary: #94a3b8;
+  /* Slate 400 */
+  --color-border: #e2e8f0;
+  /* Slate 200 */
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #4f46e5 0%, #0ea5e9 100%);
+  --gradient-sidebar: linear-gradient(180deg, #1e1b4b 0%, #312e81 100%);
+  /* Deep Indigo Night */
+  --gradient-card: linear-gradient(145deg, #ffffff 0%, #f9fafb 100%);
+
+  /* Typography */
+  --font-family-base: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
+  --font-family-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-10: 2.5rem;
+  --spacing-12: 3rem;
+
+  /* Borders & Shadows */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* Premium Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.08);
+  /* Softer, spread out */
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-glow: 0 0 20px var(--color-primary-glow);
+
+  /* Layout */
+  --header-height: 4.5rem;
+  --sidebar-width: 17rem;
+  --content-max-width: 1400px;
+
+  /* Transitions */
+  --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ================================================
+   DARK MODE OVERRIDES
+   ================================================ */
+.dark {
+  /* Core Backgrounds */
+  --color-background: #0f172a;
+  /* Slate 900 */
+  --color-surface: #1e293b;
+  /* Slate 800 */
+  --color-surface-hover: #334155;
+  /* Slate 700 */
+
+  /* Text Colors */
+  --color-text-primary: #f8fafc;
+  /* Slate 50 */
+  --color-text-secondary: #cbd5e1;
+  /* Slate 300 */
+  --color-text-tertiary: #64748b;
+  /* Slate 500 */
+  --color-border: #334155;
+  /* Slate 700 */
+
+  /* Primary Light for Focus States */
+  --color-primary-light: rgba(79, 70, 229, 0.2);
+
+  /* Gradients */
+  --gradient-card: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+
+  /* Shadows - More prominent in dark mode */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 2px 4px -2px rgb(0 0 0 / 0.3);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4), 0 4px 6px -4px rgb(0 0 0 / 0.4);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.5), 0 8px 10px -6px rgb(0 0 0 / 0.5);
+}
+
+/* ================================================
+   DARK MODE - ELEMENT OVERRIDES
+   These target inline-styled elements that use hardcoded colors
+   ================================================ */
+
+/* Header */
+.dark header {
+  background: rgba(15, 23, 42, 0.95) !important;
+  border-bottom-color: #334155 !important;
+}
+
+.dark header input {
+  background-color: #1e293b !important;
+  border-color: #334155 !important;
+  color: #f8fafc !important;
+}
+
+.dark header input::placeholder {
+  color: #64748b !important;
+}
+
+/* Cards & Surfaces */
+.dark [style*="background: white"],
+.dark [style*="background:white"],
+.dark [style*="backgroundColor: white"],
+.dark [style*="backgroundColor:white"],
+.dark [style*="background-color: white"],
+.dark [style*="background: 'white'"],
+.dark [style*="background:'white'"] {
+  background: #1e293b !important;
+}
+
+.dark [style*="background: #fff"],
+.dark [style*="backgroundColor: '#fff'"],
+.dark [style*="background: '#ffffff'"],
+.dark [style*="background: '#FFFFFF'"] {
+  background: #1e293b !important;
+}
+
+/* Text Color Overrides */
+.dark [style*="color: '#111827'"],
+.dark [style*="color: #111827"],
+.dark [style*="color: '#1f2937'"],
+.dark [style*="color: #1f2937"],
+.dark [style*="color: '#374151'"],
+.dark [style*="color: #374151"] {
+  color: #f8fafc !important;
+}
+
+.dark [style*="color: '#6b7280'"],
+.dark [style*="color: #6b7280"],
+.dark [style*="color: '#9ca3af'"],
+.dark [style*="color: #9ca3af"] {
+  color: #94a3b8 !important;
+}
+
+/* Border Overrides */
+.dark [style*="border-color: #e5e7eb"],
+.dark [style*="borderColor: '#e5e7eb'"],
+.dark [style*="border: 1px solid #e5e7eb"],
+.dark [style*="border: 1px solid #f3f4f6"] {
+  border-color: #334155 !important;
+}
+
+/* Background Overrides for Hover/Zebra States */
+.dark [style*="background: '#f9fafb'"],
+.dark [style*="background: #f9fafb"],
+.dark [style*="backgroundColor: '#f9fafb'"],
+.dark [style*="background: '#f3f4f6'"],
+.dark [style*="background: #f3f4f6"],
+.dark [style*="backgroundColor: '#f3f4f6'"],
+.dark [style*="background: '#fafafa'"],
+.dark [style*="background: #fafafa"] {
+  background: #0f172a !important;
+}
+
+/* Dropdown/Popup Overrides */
+.dark [style*="backgroundColor: 'white'"] {
+  background-color: #1e293b !important;
+}
+
+/* Main Content Area */
+.dark .main-content {
+  background-color: #0f172a !important;
+}
+
+.dark .main-wrapper {
+  background-color: #0f172a !important;
+}
