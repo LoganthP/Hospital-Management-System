@@ -297,9 +297,6 @@ CMD ["npm", "start"]
 - **API Security**: Rate limiting and input sanitization
 - **HIPAA Compliance**: Privacy-first design principles
 
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
 
 ### Development Workflow
 1. Fork the repository
@@ -315,37 +312,3 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 - **Prettier**: Code formatting
 - **TypeScript**: Strict type checking
 - **Conventional Commits**: For clear commit history
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👥 Team
-
-- **LoganthP** - *Lead Developer* - [@LoganthP](https://github.com/LoganthP)
-
-## 🙏 Acknowledgments
-
-- [Next.js](https://nextjs.org/) - The React Framework
-- [shadcn/ui](https://ui.shadcn.com/) - Beautiful component library
-- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS
-- [Firebase](https://firebase.google.com/) - Backend infrastructure
-- [Google AI](https://ai.google.dev/) - AI capabilities
-
-## 📞 Support
-
-If you have any questions or need help:
-
-- 📧 Email: [support@healthhubcentral.com](mailto:support@healthhubcentral.com)
-- 💬 GitHub Issues: [Create an issue](https://github.com/LoganthP/Hospital-Management-System/issues)
-- 📖 Documentation: [Visit our docs](https://docs.healthhubcentral.com)
-
----
-
-<div align="center">
-
-**Made with ❤️ for better healthcare management**
-
-[⭐ Star this repo](https://github.com/LoganthP/Hospital-Management-System) • [🐛 Report Bug](https://github.com/LoganthP/Hospital-Management-System/issues) • [✨ Request Feature](https://github.com/LoganthP/Hospital-Management-System/issues)
-
-</div>
