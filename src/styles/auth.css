@@ -1,0 +1,179 @@
+/* ================================================================
+   Auth Page Styles — MediCare Premium UI
+   ================================================================ */
+
+/* Google Fonts: Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* ── Keyframe Animations ─────────────────────────────────────── */
+
+@keyframes auth-fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes auth-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes auth-slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes auth-float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-8px); }
+}
+
+@keyframes auth-pulse-ring {
+  0%   { transform: scale(0.95); opacity: 0.35; }
+  100% { transform: scale(1.08); opacity: 0; }
+}
+
+@keyframes auth-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes auth-form-slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes auth-heartbeat {
+  0%, 100% { transform: scale(1); }
+  14%       { transform: scale(1.12); }
+  28%       { transform: scale(1); }
+  42%       { transform: scale(1.08); }
+  70%       { transform: scale(1); }
+}
+
+/* ── Utility Classes ─────────────────────────────────────────── */
+
+.auth-page {
+  font-family: 'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', sans-serif;
+}
+
+.auth-card-enter {
+  animation: auth-fade-in-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.auth-left-enter {
+  animation: auth-slide-in-left 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: 0.1s;
+}
+
+.auth-form-active {
+  animation: auth-form-slide-in 0.3s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.auth-float {
+  animation: auth-float 4s ease-in-out infinite;
+}
+
+.auth-spin {
+  animation: auth-spin 0.9s linear infinite;
+}
+
+.auth-heartbeat {
+  animation: auth-heartbeat 1.8s ease-in-out infinite;
+}
+
+/* Focus ring for accessibility */
+.auth-focus-ring:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 2px;
+}
+
+/* Checkbox */
+.auth-checkbox {
+  width: 16px;
+  height: 16px;
+  border-radius: 5px;
+  border: 1.5px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.06);
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  transition: all 0.2s;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.auth-checkbox:checked {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  border-color: #3b82f6;
+}
+
+.auth-checkbox:checked::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  width: 4px;
+  height: 7px;
+  border: 2px solid white;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg);
+}
+
+.auth-checkbox:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 2px;
+}
+
+/* Scrollbar for the right panel on very small heights */
+.auth-card-scroll {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255,0.1) transparent;
+}
+
+.auth-card-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+
+.auth-card-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.12);
+  border-radius: 4px;
+}
+
+/* Responsive: stack vertically on mobile */
+@media (max-width: 900px) {
+  .auth-split-left {
+    display: none !important;
+  }
+  .auth-split-right {
+    width: 100% !important;
+    max-width: 480px !important;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 520px) {
+  .auth-split-right {
+    border-radius: 24px !important;
+  }
+}

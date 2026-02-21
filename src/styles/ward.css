@@ -1,0 +1,54 @@
+.ward-content-grid {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.ward-sidebar-filters {
+    width: 300px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 24px;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    padding-right: 4px;
+    /* Space for internal scrollbar if needed */
+}
+
+/* Custom Scrollbar for the filter panel to keep it premium */
+.ward-sidebar-filters::-webkit-scrollbar {
+    width: 4px;
+}
+
+.ward-sidebar-filters::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.ward-sidebar-filters::-webkit-scrollbar-thumb {
+    background: rgba(37, 99, 235, 0.2);
+    border-radius: 10px;
+}
+
+.ward-sidebar-filters::-webkit-scrollbar-thumb:hover {
+    background: rgba(37, 99, 235, 0.4);
+}
+
+.ward-map-container {
+    flex: 1;
+    min-width: 0;
+    /* Prevents flex children from overflowing */
+}
+
+@media (max-width: 1024px) {
+    .ward-content-grid {
+        flex-direction: column;
+    }
+
+    .ward-sidebar-filters {
+        width: 100%;
+        position: static;
+        max-height: none;
+        overflow-y: visible;
+    }
+}
