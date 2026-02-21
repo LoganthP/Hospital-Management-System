@@ -1,172 +1,280 @@
 # 🏥 Hospital Management System (HMS)
 
-A modern, scalable **Hospital Management System** built to streamline
-hospital operations including patient management, doctor records,
-appointments, billing, ward allocation, and AI-powered prescription
-support.
-
-This project is designed with a clean UI, modular architecture, and
-real-world hospital workflow in mind.
+```{=html}
+<p align="center">
+```
+`<img src="https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react" />`{=html}
+`<img src="https://img.shields.io/badge/TypeScript-Strict-blue?style=for-the-badge&logo=typescript" />`{=html}
+`<img src="https://img.shields.io/badge/Vite-Fast-purple?style=for-the-badge&logo=vite" />`{=html}
+`<img src="https://img.shields.io/badge/TailwindCSS-Modern-38B2AC?style=for-the-badge&logo=tailwindcss" />`{=html}
+`<img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" />`{=html}
+```{=html}
+</p>
+```
+```{=html}
+<p align="center">
+```
+`<b>`{=html}A Modern, Scalable & AI-Integrated Hospital Management
+System`</b>`{=html}`<br/>`{=html} Streamlining hospital operations with
+smart modules for patients, doctors, billing, appointments, and AI
+prescriptions.
+```{=html}
+</p>
+```
 
 ------------------------------------------------------------------------
 
-## 🚀 Project Overview
+# 🚀 Project Overview
 
-The Hospital Management System (HMS) is a full-featured web application
-that helps hospitals and clinics manage:
+The **Hospital Management System (HMS)** is a full-featured web
+application designed to digitize and automate hospital workflows
+including:
 
--   👨‍⚕️ Doctors\
--   🧑‍🤝‍🧑 Patients\
--   📅 Appointments\
--   💊 AI Prescriptions\
--   🧾 Billing\
+-   👨‍⚕️ Doctor Management\
+-   🧑‍🤝‍🧑 Patient Records\
+-   📅 Appointment Scheduling\
+-   💊 AI Prescription System\
+-   🧾 Billing & Invoices\
 -   🛏️ Ward Management\
 -   📊 Dashboard Analytics\
--   ⚙️ System Settings
+-   ⚙️ Admin Settings
 
-It provides a centralized dashboard for efficient hospital
-administration and data management.
-
-------------------------------------------------------------------------
-
-## 🧠 Key Features
-
-### 🏥 Core Modules
-
--   📊 **Dashboard** -- Overview of hospital data and analytics\
--   👨‍⚕️ **Doctors Management** -- Add, update, and manage doctor records\
--   🧑‍🦽 **Patients Management** -- Patient registration and tracking\
--   📅 **Appointments System** -- Schedule and manage appointments\
--   💊 **AI Prescription** -- Smart prescription assistance\
--   🧾 **Billing System** -- Generate and manage hospital bills\
--   🛏️ **Ward Management** -- Assign and monitor ward availability\
--   🧭 **Hospital Guide** -- Navigation and hospital information system\
--   ⚙️ **Settings Panel** -- Application configuration\
--   🔐 **Authentication** -- Secure login system
+This system provides a **centralized dashboard** for efficient hospital
+administration and real-time data management.
 
 ------------------------------------------------------------------------
 
-## 🗂️ Project Structure
+# 🎯 Key Features
 
-Based on your current codebase:
+## 🏥 Core Modules
+
+-   📊 **Dashboard** -- Hospital analytics & overview\
+-   👨‍⚕️ **Doctors Management** -- Add, edit, and manage doctors\
+-   🧑‍🦽 **Patients Management** -- Patient registration & tracking\
+-   📅 **Appointments System** -- Smart scheduling system\
+-   💊 **AI Prescription** -- Intelligent prescription interface\
+-   🧾 **Billing System** -- Invoice & payment management\
+-   🛏️ **Ward Management** -- Bed & ward allocation tracking\
+-   🧭 **Hospital Guide** -- Navigation & information system\
+-   ⚙️ **Settings Panel** -- System configuration\
+-   🔐 **Authentication System** -- Secure login access
+
+------------------------------------------------------------------------
+
+# 🏗️ Project Architecture System
+
+## 📐 Architecture Overview
+
+    User (Browser)
+    │
+    ▼
+    Frontend (React + TypeScript + Vite)
+    │
+    ├── Pages Layer (Feature Modules)
+    │   ├── Dashboard
+    │   ├── Doctors
+    │   ├── Patients
+    │   ├── Appointments
+    │   ├── Billing
+    │   ├── AI Prescription
+    │   ├── Ward Management
+    │   ├── Hospital Guide
+    │   └── Settings
+    │
+    ├── Components Layer (Reusable UI)
+    │   ├── Navbar
+    │   ├── Sidebar
+    │   ├── Cards
+    │   ├── Forms
+    │   └── Tables
+    │
+    ├── Logic Layer
+    │   ├── Hooks
+    │   ├── Utilities
+    │   └── Services (API Ready)
+    │
+    └── Styling & Assets
+        ├── Tailwind CSS
+        ├── Icons & Images
+        └── Global Styles
+
+------------------------------------------------------------------------
+
+## 🧩 Layered Architecture Explanation
+
+### 1️⃣ Presentation Layer (UI)
+
+-   Built using React + TypeScript
+-   Handles UI rendering and user interaction
+-   Fully responsive using Tailwind CSS
+-   Clean and modern hospital dashboard design
+
+### 2️⃣ Module-Based Page Architecture
+
+  Module            Description
+  ----------------- -------------------------------
+  Dashboard         Analytics and system overview
+  Doctors           Doctor profile management
+  Patients          Patient records and history
+  Appointments      Scheduling and booking
+  Billing           Invoice and payment handling
+  AI Prescription   Smart medical prescription UI
+  Ward Management   Bed and ward tracking
+  Settings          System configuration
+
+------------------------------------------------------------------------
+
+## 🔀 Routing Architecture
+
+    /login → Authentication Page
+    /dashboard → Main Dashboard
+    /doctors → Doctor Management
+    /patients → Patient Records
+    /appointments → Appointment System
+    /billing → Billing Module
+    /ai-prescription → AI Prescription Page
+    /ward-management → Ward Allocation
+    /settings → System Settings
+
+------------------------------------------------------------------------
+
+# 📂 Project Structure
 
     src/
     │
     ├── pages/
-    │   ├── AIPrescription.tsx     # AI prescription module
-    │   ├── Appointments.tsx       # Appointment management
-    │   ├── Billing.tsx            # Billing and invoices
-    │   ├── Dashboard.tsx          # Main dashboard
-    │   ├── Doctors.tsx            # Doctor management
-    │   ├── HospitalGuide.tsx      # Hospital guide system
-    │   ├── Login.tsx              # Authentication page
-    │   ├── Patients.tsx           # Patient records
-    │   ├── Settings.tsx           # App settings
-    │   └── WardManagement.tsx     # Ward allocation & tracking
+    │   ├── AIPrescription.tsx
+    │   ├── Appointments.tsx
+    │   ├── Billing.tsx
+    │   ├── Dashboard.tsx
+    │   ├── Doctors.tsx
+    │   ├── HospitalGuide.tsx
+    │   ├── Login.tsx
+    │   ├── Patients.tsx
+    │   ├── Settings.tsx
+    │   └── WardManagement.tsx
     │
-    ├── components/                # Reusable UI components
-    ├── assets/                    # Images and static files
-    └── main.tsx                   # Application entry point
+    ├── components/
+    ├── assets/
+    ├── hooks/
+    ├── utils/
+    ├── services/
+    └── main.tsx
 
 ------------------------------------------------------------------------
 
-## 🛠️ Tech Stack
+# 🛠️ Tech Stack
 
-  Technology             Usage
-  ---------------------- ------------------------------
-  React + TypeScript     Frontend Development
-  Vite                   Fast Build Tool & Dev Server
-  Tailwind CSS           UI Styling
-  Node.js                Runtime Environment
-  Modern UI Components   Modular Design
+  Technology                  Role
+  --------------------------- ------------------------------
+  ⚛️ React + TypeScript       Frontend Development
+  ⚡ Vite                     Fast Build Tool & Dev Server
+  🎨 Tailwind CSS             Modern UI Styling
+  🟢 Node.js                  Runtime Environment
+  🧩 Component Architecture   Scalable UI Design
 
 ------------------------------------------------------------------------
 
-## 📦 Installation & Setup
+# 📦 Installation & Setup
 
-### Prerequisites
+## 🔧 Prerequisites
 
-Make sure you have installed: - Node.js (v16 or higher) - npm or yarn
+-   Node.js (v16 or higher)
+-   npm or yarn
 
-### Step 1: Clone the Repository
+## 📥 Step 1: Clone the Repository
 
 ``` bash
 git clone https://github.com/LoganthP/Hospital-Management-System.git
 ```
 
-### Step 2: Navigate to Project Folder
+## 📁 Step 2: Navigate to Project Folder
 
 ``` bash
 cd Hospital-Management-System
 ```
 
-### Step 3: Install Dependencies
+## 📦 Step 3: Install Dependencies
 
 ``` bash
 npm install
 ```
 
-### Step 4: Run the Development Server
+## ▶️ Step 4: Run Development Server
 
 ``` bash
 npm run dev
 ```
 
-Now open your browser and visit:
+Open in browser:
 
     http://localhost:5173
 
 ------------------------------------------------------------------------
 
-## 🔐 Authentication System
+# 🔐 Authentication System
 
--   Secure Login Page\
--   Role-based access ready (Admin / Staff expandable)\
--   Protected dashboard routes (can be extended)
-
-------------------------------------------------------------------------
-
-## 📊 Dashboard Functionalities
-
-The dashboard provides: - Patient statistics\
-- Doctor overview\
-- Appointment tracking\
-- Hospital performance insights\
-- Real-time data visualization (extendable)
+-   Secure Login Page
+-   Role-based system ready (Admin / Staff)
+-   Protected dashboard routes (extendable)
+-   Secure form validation support
 
 ------------------------------------------------------------------------
 
-## 💊 AI Prescription Module
+# 📊 Dashboard Functionalities
 
-The AI Prescription page is designed to: - Assist doctors in generating
-prescriptions\
-- Improve diagnosis workflow\
-- Reduce manual errors\
-- Enhance digital healthcare experience
-
-*(Can be integrated with AI APIs in future updates)*
+-   📈 Patient statistics
+-   👨‍⚕️ Doctor overview
+-   📅 Appointment tracking
+-   🏥 Hospital performance insights
+-   📊 Real-time analytics (scalable)
 
 ------------------------------------------------------------------------
 
-## 🎨 UI & Design Highlights
+# 💊 AI Prescription Module
 
--   Clean and modern hospital UI\
--   Responsive across all devices 📱💻\
--   Modular page-based architecture\
--   Easy navigation between HMS modules\
--   Scalable component structure
+-   Assist doctors in generating prescriptions
+-   Improve diagnosis workflow
+-   Reduce manual medical errors
+-   Enhance digital healthcare experience
+-   Future AI API integration ready
 
 ------------------------------------------------------------------------
 
-## 🚀 Future Improvements (Planned)
+# 🎨 UI & Design Highlights
 
--   🔔 Notification system\
--   🧬 AI Diagnosis integration\
--   🗃️ Database integration (MongoDB / MySQL)\
--   📱 Mobile responsive optimization\
--   🧾 Advanced billing reports\
--   👨‍⚕️ Multi-role admin panel
+-   🧼 Clean & professional hospital UI
+-   📱 Fully responsive (Mobile + Desktop)
+-   🧩 Modular component architecture
+-   ⚡ Fast performance with Vite
+-   🎯 User-friendly navigation system
 
+------------------------------------------------------------------------
 
-⭐ If you found this project useful, don't forget to star the
-repository!
+# 🚀 Future Improvements (Planned)
+
+-   🔔 Notification System
+-   🧬 AI Diagnosis Integration
+-   🗃️ Database Integration (MongoDB / MySQL / PostgreSQL)
+-   📱 Advanced Mobile Optimization
+-   🧾 Advanced Billing Reports & Analytics
+-   👨‍⚕️ Multi-role Admin Panel
+-   ☁️ Cloud Deployment Support
+
+------------------------------------------------------------------------
+
+# 🔮 Recommended Backend Architecture (Future)
+
+    Frontend (React + Vite)
+            │
+            ▼
+    Backend (Node.js / Express API)
+            │
+            ├── Authentication Service
+            ├── Patient Service
+            ├── Doctor Service
+            ├── Billing Service
+            └── AI Prescription Service
+            │
+            ▼
+    Database (MongoDB / MySQL)
