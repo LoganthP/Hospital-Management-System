@@ -1,28 +1,19 @@
 # 🏥 Hospital Management System (HMS)
 
-```{=html}
 <p align="center">
-```
-`<img src="https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react" />`{=html}
-`<img src="https://img.shields.io/badge/TypeScript-Strict-blue?style=for-the-badge&logo=typescript" />`{=html}
-`<img src="https://img.shields.io/badge/Vite-Fast-purple?style=for-the-badge&logo=vite" />`{=html}
-`<img src="https://img.shields.io/badge/TailwindCSS-Modern-38B2AC?style=for-the-badge&logo=tailwindcss" />`{=html}
-`<img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" />`{=html}
-```{=html}
+  <img src="https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react" />
+  <img src="https://img.shields.io/badge/TypeScript-Strict-blue?style=for-the-badge&logo=typescript" />
+  <img src="https://img.shields.io/badge/Vite-Fast-purple?style=for-the-badge&logo=vite" />
+  <img src="https://img.shields.io/badge/TailwindCSS-Modern-38B2AC?style=for-the-badge&logo=tailwindcss" />
+  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" />
 </p>
-```
-```{=html}
-<p align="center">
-```
-`<b>`{=html}A Modern, Scalable & AI-Integrated Hospital Management
-System`</b>`{=html}`<br/>`{=html} Streamlining hospital operations with
-smart modules for patients, doctors, billing, appointments, and AI
-prescriptions.
-```{=html}
-</p>
-```
 
-------------------------------------------------------------------------
+<p align="center">
+  <b>A Modern, Scalable & AI-Integrated Hospital Management System</b><br/>
+  Streamlining hospital operations with smart modules for patients, doctors, billing, appointments, and AI prescriptions.
+</p>
+
+---
 
 # 🚀 Project Overview
 
