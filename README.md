@@ -54,41 +54,41 @@ administration and real-time data management.
 
 # 🏗️ Project Architecture System
 
-## 📐 Architecture Overview
+```markdown
+## 🧩 Frontend Architecture Diagram
 
-    User (Browser)
-    │
-    ▼
-    Frontend (React + TypeScript + Vite)
-    │
-    ├── Pages Layer (Feature Modules)
-    │   ├── Dashboard
-    │   ├── Doctors
-    │   ├── Patients
-    │   ├── Appointments
-    │   ├── Billing
-    │   ├── AI Prescription
-    │   ├── Ward Management
-    │   ├── Hospital Guide
-    │   └── Settings
-    │
-    ├── Components Layer (Reusable UI)
-    │   ├── Navbar
-    │   ├── Sidebar
-    │   ├── Cards
-    │   ├── Forms
-    │   └── Tables
-    │
-    ├── Logic Layer
-    │   ├── Hooks
-    │   ├── Utilities
-    │   └── Services (API Ready)
-    │
-    └── Styling & Assets
-        ├── Tailwind CSS
-        ├── Icons & Images
-        └── Global Styles
+```mermaid
+flowchart TD
+    A[User (Browser)] --> B[Frontend: React + TypeScript + Vite]
 
+    B --> C[Pages Layer (Feature Modules)]
+    B --> D[Components Layer (Reusable UI)]
+    B --> E[Logic Layer]
+    B --> F[Styling & Assets]
+
+    C --> C1[Dashboard]
+    C --> C2[Doctors]
+    C --> C3[Patients]
+    C --> C4[Appointments]
+    C --> C5[Billing]
+    C --> C6[AI Prescription]
+    C --> C7[Ward Management]
+    C --> C8[Hospital Guide]
+    C --> C9[Settings]
+
+    D --> D1[Navbar]
+    D --> D2[Sidebar]
+    D --> D3[Cards]
+    D --> D4[Forms]
+    D --> D5[Tables]
+
+    E --> E1[Hooks]
+    E --> E2[Utilities]
+    E --> E3[Services (API Ready)]
+
+    F --> F1[Tailwind CSS]
+    F --> F2[Icons & Images]
+    F --> F3[Global Styles]
 ------------------------------------------------------------------------
 
 ## 🧩 Layered Architecture Explanation
