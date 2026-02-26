@@ -253,18 +253,21 @@ Open in browser:
 
 # 🔮 Recommended Backend Architecture (Future)
 
-```text
-        Frontend (React + Vite)
-                 │
-                 ▼
-        Backend (Node.js / Express API)
-                 │
-        ┌────────┼──────────────┬──────────────┬──────────────┐
-        │        │              │              │              │
-        ▼        ▼              ▼              ▼              ▼
-Authentication  Patient       Doctor        Billing    AI Prescription
-   Service      Service       Service       Service        Service
-                 │
-                 ▼
-        Database (MongoDB / MySQL / PostgreSQL)
+```mermaid
+flowchart TD
+    A[Frontend React Vite] --> B[Backend Node Express API]
+    
+    B --> C[Authentication Service]
+    B --> D[Patient Service]
+    B --> E[Doctor Service]
+    B --> F[Billing Service]
+    B --> G[AI Prescription Service]
+    
+    C --> H[Database Layer]
+    D --> H
+    E --> H
+    F --> H
+    G --> H
+    
+    H --> I[Medical and System Records Storage]
 ```
