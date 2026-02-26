@@ -1,4 +1,4 @@
-# 🏥 Hospital Management System (HMS)
+<h1 align="center">🏥 Hospital Management System (HMS)</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/React-18-blue?style=for-the-badge&logo=react" />
@@ -51,51 +51,36 @@ This system provides a **centralized dashboard** for efficient hospital administ
 
 # 🏗️ Project Architecture System
 
-```text
-                          ┌──────────────────────┐
-                          │        User          │
-                          │      (Browser)      │
-                          └──────────┬──────────┘
-                                     │
-                                     ▼
-                ┌─────────────────────────────────────┐
-                │   Frontend (React + TypeScript +   │
-                │              Vite)                 │
-                └──────────┬───────────┬────────────┘
-                           │           │
-                           │           │
-        ┌──────────────────▼───┐   ┌───▼──────────────────┐
-        │   Pages Layer        │   │  Components Layer     │
-        │  (Feature Modules)   │   │   (Reusable UI)       │
-        │                      │   │                       │
-        │  • Dashboard         │   │  • Navbar             │
-        │  • Doctors           │   │  • Sidebar            │
-        │  • Patients          │   │  • Cards              │
-        │  • Appointments      │   │  • Forms              │
-        │  • Billing           │   │  • Tables             │
-        │  • AI Prescription   │   └──────────┬────────────┘
-        │  • Ward Management   │              │
-        │  • Hospital Guide    │              │
-        │  • Settings          │              │
-        └──────────┬───────────┘              │
-                   │                          │
-                   ▼                          ▼
-           ┌────────────────────────────────────────┐
-           │             Logic Layer                │
-           │                                        │
-           │  • Custom Hooks                        │
-           │  • Utilities                           │
-           │  • Services (API Integration Ready)    │
-           └──────────────────┬─────────────────────┘
-                              │
-                              ▼
-              ┌─────────────────────────────────┐
-              │        Styling & Assets         │
-              │                                 │
-              │  • Tailwind CSS                 │
-              │  • Icons & Images               │
-              │  • Global Styles                │
-              └─────────────────────────────────┘
+```mermaid
+flowchart TD
+    A[User Accesses Hospital Management System] --> B[Frontend User Interface]
+    
+    B --> C[Authentication Module]
+    C --> D[Login and Registration]
+    
+    D --> E[Role Based Access Control]
+    
+    E --> F[Admin Module]
+    E --> G[Doctor Module]
+    E --> H[Patient Module]
+    
+    F --> I[Manage Doctors Patients Staff]
+    G --> J[View Appointments and Medical Records]
+    H --> K[Book Appointments and View Reports]
+    
+    I --> L[Application Service Layer]
+    J --> L
+    K --> L
+    
+    L --> M[Database Layer]
+    
+    M --> N[Patient Records]
+    M --> O[Doctor Information]
+    M --> P[Appointment Data]
+    
+    L --> Q[System Response]
+    Q --> R[Dashboard Visualization]
+    R --> S[Tables Charts and Reports]
 ```
 
 ---
